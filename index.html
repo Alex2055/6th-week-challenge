@@ -3,22 +3,27 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GIF search</title>
+    <title>Weather Dashboard</title>
   </head>
   <body>
-    <h1>Now let's add some options to our search</h1>
-    <div>Search term: <input type="text" id="searchTerm" value="Cats" /></div>
+    <header>
+    <h1>Weather Dashboard</h1>
+  </header>
+    <div>Search for a City: <input type="text" id="locationinput" value="" /></div>
     <div>
-      Rating:
-      <!-- Add a select menu with an id of 'rating' -->
-      <select id="rating">
-        <option value="G">G</option>
-        <option value="PG">PG</option>
-        <option value="PG-13">PG-13</option>
-      </select>
     </div>
-    <button onclick="myFunction()">Search!</button>
-    <div id="response-container"></div>
+    <button onclick="addnewCity()">Search!</button>
+<p id="cityName"></p>
+<img id="skyCond" src="">
+<p id="Temp"></p>
+<p id="Humid"></p>
+<p id="windSpeed"></p>
+<p id="UV"></p>
+
+
+
+
+    <!-- <div id="response-container"></div> -->
     <script src="assets/js/script.js"></script>
   </body>
 </html>
