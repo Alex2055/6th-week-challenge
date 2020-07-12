@@ -13,6 +13,7 @@ header {
     height: 500px;
     padding: 10px;
     
+    
 }
 .current-weather-block{
    
@@ -48,7 +49,7 @@ top: 10px;
 .container{
     position: absolute;
     width: 77%;
-    top: 300px;
+    top: 330px;
     left: 265px;
    
 }
@@ -74,4 +75,34 @@ top: 10px;
 .date-font{
 font-size: 15pt;
 margin-top: 10px;
+}
+
+#UV{
+    position: absolute;
+    width: 42px;
+    height: 30px;
+    top: 185px;
+    border-radius:5px ;
+    font-size:10pt;
+    margin-left: 10px;
+    padding: 5px;
+    color: white;
+}
+.new-div{
+   background-color: white;
+   height: 50px;
+   border-style: solid;
+   border-color: rgb(224, 224, 224);
+   border-width: 1px;
+   border-top: 0;
+   padding-top: 10px;
+   padding-left: 10px;
+   color: gray;
+   border-radius: 5px;
+   text-transform: capitalize;
+   
+}
+#locationinput{
+    margin-bottom : 20px;
+    
 }
