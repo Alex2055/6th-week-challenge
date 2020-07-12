@@ -1,0 +1,77 @@
+header {
+    background-color: rgb(43, 43, 46);
+    text-align: center;
+    color: white;
+    height: 60px;
+    width: 100%;
+}
+.city-search{
+    background-color: rgb(249, 249, 255);
+    position: absolute;
+    left: 0;
+    top: 60px;
+    height: 500px;
+    padding: 10px;
+    
+}
+.current-weather-block{
+   
+position: absolute;
+left: 290px;
+top: 75px;
+width: 100%;
+padding: 20px ;
+border-style : solid;
+border-width: 1px;
+border-color:lightgray;
+border-radius: 1%;
+
+}
+
+#skyCond{
+display: inline-block ;
+height: 60px;
+position: absolute;
+top: 10px;
+
+}
+
+#cityName{
+    display: inline-block;
+ 
+}
+
+#topDate{
+    font-size: 25px;
+}
+
+.container{
+    position: absolute;
+    width: 77%;
+    top: 300px;
+    left: 265px;
+   
+}
+
+.col-2{
+    box-sizing: border-box;
+    height: 200px;
+    width: 100px;
+    background-color: rgb(31, 108, 223);
+    margin: 12px;
+    border-radius: 5px;
+    color: white;
+}
+
+.sky{
+    height: 50px;
+}
+
+.temp-hum-font{
+    font-size: 10pt;
+}
+
+.date-font{
+font-size: 15pt;
+margin-top: 10px;
+}

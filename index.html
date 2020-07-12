@@ -1,29 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Weather Dashboard</title>
-  </head>
-  <body>
-    <header>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/style.css" />
+
+  <title>Weather Dashboard</title>
+
+</head>
+
+<body>
+  <header>
     <h1>Weather Dashboard</h1>
   </header>
-    <div>Search for a City: <input type="text" id="locationinput" value="" /></div>
-    <div>
-    </div>
+  <div class="city-search">
+    <div>Search for a City: </div>
+    <input type="text" id="locationinput" value="" />
     <button onclick="addnewCity()">Search!</button>
-<p id="cityName"></p>
-<img id="skyCond" src="">
-<p id="Temp"></p>
-<p id="Humid"></p>
-<p id="windSpeed"></p>
-<p id="UV"></p>
+  </div>
+
+  <div class="current-weather-block">
+
+    <div class="first-line">
+      <h2 id="cityName"></h2>
+      <span id="topDate"></span>
+      <img id="skyCond" src="">
+    </div>
+    <p id="Temp"></p>
+    <p id="Humid"></p>
+    <p id="windSpeed"></p>
+    <p id="UV"></p>
+  </div>
+
+  <div class="container">
+    <div class="row justify-content-center ">
+      <div class="col-2">
+        <p class="date-font" id="fiDate"></p>
+        <img class="sky" id="fiSky"></img>
+        <p class="temp-hum-font" id="fiTemp"></p>
+        <p class="temp-hum-font" id="fiHumid"></p>
+      </div>
+      <div class="col-2">
+        <p class="date-font" id="sDate"></p>
+        <img class="sky" id="sSky"></img>
+        <p class="temp-hum-font" id="sTemp"></p>
+        <p class="temp-hum-font" id="sHumid"></p>
+      </div>
+      <div class="col-2">
+        <p class="date-font" id="tDate"></p>
+        <img class="sky" id="tSky"></img>
+        <p class="temp-hum-font" id="tTemp"></p>
+        <p class="temp-hum-font" id="tHumid"></p>
+      </div>
+      <div class="col-2">
+        <p class="date-font" id="foDate"></p>
+        <img class="sky" id="foSky"></img>
+        <p class="temp-hum-font" id="foTemp"></p>
+        <p class="temp-hum-font" id="foHumid"></p>
+      </div>
+      <div class="col-2">
+        <p class="date-font" id="fifDate"></p>
+        <img class="sky" id="fifSky"></img>
+        <p class="temp-hum-font" id="fifTemp"></p>
+        <p class="temp-hum-font" id="fifHumid"></p>
+      </div>
+    </div>
+  </div>
 
 
 
+  <!-- <div id="response-container"></div> -->
+  <script src="assets/js/script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+</body>
 
-    <!-- <div id="response-container"></div> -->
-    <script src="assets/js/script.js"></script>
-  </body>
 </html>
