@@ -14,4 +14,4 @@ Check weather in multiple cities
 ## Website
 https://alex2055.github.io/6th-week-challenge/
 #
-![web page screenshot](assets/screenshot.png/)
+![web page screenshot](assets/img/screenshot/)
