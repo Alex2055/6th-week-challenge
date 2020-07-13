@@ -26,7 +26,7 @@ function myFunction() {
 
   //first request to get the forecast for  today
   fetch(
-    'https://api.openweathermap.org/data/2.5/weather?q=' + (newCity || myCity) + '&appid=8eda773abbe6b913d62bbf5d3cc23857&units=imperial'
+    'http://api.openweathermap.org/data/2.5/weather?q=' + (newCity || myCity) + '&appid=8eda773abbe6b913d62bbf5d3cc23857&units=imperial'
   )
     .then(function (response) {
 
@@ -117,7 +117,7 @@ function myFunction() {
   // request 5 day forecast
 
   fetch(
-    'https://api.openweathermap.org/data/2.5/forecast?q=' + myCity + '&appid=8eda773abbe6b913d62bbf5d3cc23857&units=imperial'
+    'http://api.openweathermap.org/data/2.5/forecast?q=' + myCity + '&appid=8eda773abbe6b913d62bbf5d3cc23857&units=imperial'
   )
 
     .then(function (response) {
