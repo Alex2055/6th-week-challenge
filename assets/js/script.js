@@ -26,7 +26,7 @@ function myFunction() {
 
   //first request to get the forecast for  today
   fetch(
-    'http://api.openweathermap.org/data/2.5/weather?q=' + (newCity || myCity) + '&appid=8eda773abbe6b913d62bbf5d3cc23857&units=imperial'
+    'https://api.openweathermap.org/data/2.5/weather?q=' + (newCity || myCity) + '&appid=8eda773abbe6b913d62bbf5d3cc23857&units=imperial'
   )
     .then(function (response) {
 
@@ -73,7 +73,7 @@ function myFunction() {
       todaysdate.innerHTML = "(" + dateformat + ")";
 
       var skyCondition = document.getElementById("skyCond");
-      skyCondition.setAttribute('src', 'http://openweathermap.org/img/wn/' + response.weather[0].icon + '@2x.png')
+      skyCondition.setAttribute('src', 'https://openweathermap.org/img/wn/' + response.weather[0].icon + '@2x.png')
 
       var currentTemp = document.getElementById("Temp");
       var tempInt = Math.round(response.main.temp);
@@ -94,7 +94,7 @@ function myFunction() {
       //UV index request with location parameters from the first fetch
 
       return fetch(
-        'http://api.openweathermap.org/data/2.5/uvi?appid=8eda773abbe6b913d62bbf5d3cc23857&lat=' + lat + '&lon=' + lon
+        'https://api.openweathermap.org/data/2.5/uvi?appid=8eda773abbe6b913d62bbf5d3cc23857&lat=' + lat + '&lon=' + lon
       )
 
     })
@@ -117,7 +117,7 @@ function myFunction() {
   // request 5 day forecast
 
   fetch(
-    'http://api.openweathermap.org/data/2.5/forecast?q=' + myCity + '&appid=8eda773abbe6b913d62bbf5d3cc23857&units=imperial'
+    'https://api.openweathermap.org/data/2.5/forecast?q=' + myCity + '&appid=8eda773abbe6b913d62bbf5d3cc23857&units=imperial'
   )
 
     .then(function (response) {
